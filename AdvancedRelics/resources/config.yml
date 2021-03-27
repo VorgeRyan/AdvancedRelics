@@ -1,0 +1,108 @@
+---
+
+relicName: "§6Relic§r §7(Click) \n §7* §aA treasure found only by mining stone §7* \n §7* §bTap anywhere to open it §7*"
+
+
+broadcastMessage: false
+
+
+relicRandomize: 3
+
+
+relicBlocks: ["1", "2", "3", "4"]
+
+
+opRelics: ["legendary", "mythic", "rare"]
+
+
+relics:
+  common:
+    name: "§aCommon§r"
+    chance: 5
+    rewards:
+      - item: "steak:0"
+        chance: 60
+        amount: 16
+      - chance: 40
+      - name: "Demi Sword"
+        item: "diamond_sword:0"
+        amount: 1
+        chance: 85
+        enchantments:
+          sharpness:
+            level: 3
+      - name: "Commands"
+        chance: 50
+        commands:
+          - givemoney %PLAYER% 100000
+      - name: "Commands"
+        chance: 50
+        commands:
+          - key %PLAYER% uncommon
+  uncommon:
+    name: "§aUncommon§r"
+    chance: 4
+    rewards:
+      - name: "Gpic"
+        item: "diamond_pickaxe"
+        amount: 1
+        chance: 50
+        enchantments:
+          efficiency:
+            level: 10
+      - name: "Command"
+        chance: 50
+        commands:
+          - givemoney %PLAYER% 100000
+      - name: "Command"
+        chance: 50
+        commands:
+          - keyall uncommon
+  rare:
+    name: "§aRare§r"
+    chance: 3
+    rewards:
+      - name: "Butcher Axe"
+        item: "diamond_sword:0"
+        amount: 1
+        chance: 15
+        enchantments:
+          sharpness:
+            level: 5
+      - name: "Command"
+        chance: 30
+        commands:
+          - givemoney %PLAYER% 150000
+
+  mythic:
+    name: "§aMythic§r"
+    chance: 2
+    rewards:
+      - name: "Command"
+        chance: 50
+        commands:
+          - givemoney %PLAYER% 250000
+      - name: "Command"
+        chance: 50
+        commands:
+          - key %PLAYER% epic
+  legendary:
+    name: "§aLegendary§r"
+    chance: 1
+    rewards:
+      - name: "Holy Pic"
+        item: "diamond_picaxe:0"
+        amount: 1
+        chance: 50
+        enchantments:
+          efficiency:
+            level: 15
+      - name: "Command"
+        chance: 50
+        commands:
+          - givemoney %PLAYER% 500000
+      - name: "Command"
+        chance: 50
+        commands:
+          - key %PLAYER% legendary
+...

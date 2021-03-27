@@ -1,0 +1,13 @@
+---
+name: AdvancedRelics
+main: vorge\AdvancedRelics\RelicsMain
+version: 2.1.0
+api: [3.0.0]
+author: vorge
+description: "A relics plugin for PMMP"
+
+softdepend:
+- PiggyCustomEnchants
+- EconomyAPI
+- EasyKit
+...
